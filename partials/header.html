@@ -1,0 +1,50 @@
+<header>
+    <div class="logo"><i class="fas fa-calendar-check"></i> AttendEase</div>
+    <div class="date-display" id="current-date">June 11, 2023</div>
+    <div class="user-info">
+        <div class="notification-icon" id="notification-icon">
+            <i class="fas fa-bell"></i>
+            <div class="notification-badge hidden" id="notification-badge">3</div>
+        </div>
+        <div class="user-avatar" id="user-avatar">AS</div>
+        <span id="username">Adiba Yamim Shuci</span>
+        
+        <!-- Dropdown Menu -->
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="dropdown-header">
+                <div class="user-avatar" id="dropdown-avatar">AS</div>
+                <div class="dropdown-header-info">
+                    <h4 id="dropdown-name">Adiba Yamim Shuci</h4>
+                    <p id="dropdown-email">email@domain.com</p>
+                </div>
+            </div>
+            <div class="dropdown-item" id="edit-profile-btn">
+                <i class="fas fa-user-edit"></i>
+                <span>Edit Profile</span>
+            </div>
+            <div class="dropdown-item" id="change-password-btn">
+                <i class="fas fa-key"></i>
+                <span>Change Password</span>
+            </div>
+            <div class="dropdown-item">
+                <i class="fas fa-cog"></i>
+                <span>Settings</span>
+            </div>
+            <div class="dropdown-item" id="logout-btn">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Log Out</span>
+            </div>
+        </div>
+        
+        <!-- Notification Panel -->
+        <div class="notification-panel" id="notification-panel">
+            <div class="notification-header">
+                <h4>Notifications</h4>
+                <span class="mark-all-read" id="mark-all-read">Mark all as read</span>
+            </div>
+            <div id="notification-list">
+                <!-- Notifications will be populated here -->
+            </div>
+        </div>
+    </div>
+</header>

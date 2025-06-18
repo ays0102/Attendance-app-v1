@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reports</title>
+    <!-- Styles if not inherited from parent -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+<div id="attendance-report-screen" class="hidden">
+    <h2>Attendance Analytics</h2>
+    
+    <div class="chart-container">
+        <div class="chart-header">
+            <div class="chart-title">Attendance Overview</div>
+            <div class="chart-actions">
+                <select id="report-period">
+                    <option value="week">This Week</option>
+                    <option value="month">This Month</option>
+                    <option value="semester">This Semester</option>
+                </select>
+                <button class="btn-secondary"><i class="fas fa-download"></i></button>
+            </div>
+        </div>
+        <div class="chart-placeholder">
+            Attendance chart will be displayed here
+        </div>
+    </div>
+    
+    <div class="chart-container">
+        <div class="chart-header">
+            <div class="chart-title">Course-wise Attendance</div>
+            <div class="chart-actions">
+                <button class="btn-secondary"><i class="fas fa-download"></i></button>
+            </div>
+        </div>
+        <div class="chart-placeholder">
+            Course comparison chart will be displayed here
+        </div>
+    </div>
+    
+    <h3>Detailed Reports</h3>
+    <div class="cards-grid">
+        <div class="card" data-report="daily">
+            <h3><i class="fas fa-calendar-day"></i> Daily Report</h3>
+            <p>View attendance records by date</p>
+            <div class="card-footer">
+                <button class="view-btn">Generate</button>
+            </div>
+        </div>
+        <div class="card" data-report="student">
+            <h3><i class="fas fa-user-graduate"></i> Student Report</h3>
+            <p>View individual student attendance</p>
+            <div class="card-footer">
+                <button class="view-btn">Generate</button>
+            </div>
+        </div>
+        <div class="card" data-report="course">
+            <h3><i class="fas fa-book"></i> Course Report</h3>
+            <p>View attendance by course</p>
+            <div class="card-footer">
+                <button class="view-btn">Generate</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CT marks</title>
+    <!-- Styles if not inherited from parent -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div id="ct-marks-screen" class="hidden">
+    <div class="flex justify-between items-center mb-20">
+        <h2>Class Test Marks</h2>
+        <div class="export-controls">
+            <button class="btn-secondary"><i class="fas fa-download"></i> Export</button>
+            <button class="btn"><i class="fas fa-plus"></i> Add Test</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="ct-course-select">Course:</label>
+        <select id="ct-course-select" class="form-control">
+            <option value="">Select a course</option>
+            <option value="CSE-326">CSE-326 - Web Programming</option>
+            <option value="CSE-335">CSE-335 - Software Engineering</option>
+            <option value="CSE-331">CSE-331 - Database Systems</option>
+            <option value="CSE-313">CSE-313 - Algorithms</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="ct-test-select">Test:</label>
+        <select id="ct-test-select" class="form-control">
+            <option value="">Select a test</option>
+            <option value="CT1">Class Test 1</option>
+            <option value="CT2">Class Test 2</option>
+            <option value="CT3">Class Test 3</option>
+        </select>
+    </div>
+
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th>Student Name - ID</th>
+                <th>Marks</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="ct-marks-list">
+            <!-- CT marks will be populated here -->
+        </tbody>
+    </table>
+    <button class="btn mt-20"><i class="fas fa-save"></i> Save Marks</button>
+</div>
+</body>
+</html>

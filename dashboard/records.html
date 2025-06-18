@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Records</title>
+    <!-- Styles if not inherited from parent -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+<div id="view-records-screen" class="hidden">
+    <div class="flex justify-between items-center mb-20">
+        <h2>Student Records</h2>
+        <div class="export-controls">
+            <button class="btn-secondary"><i class="fas fa-download"></i> Export</button>
+            <button class="btn"><i class="fas fa-plus"></i> Add Student</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="records-course-select">Filter by Course:</label>
+        <select id="records-course-select" class="form-control">
+            <option value="">All Courses</option>
+            <option value="CSE-326">CSE-326 - Web Programming</option>
+            <option value="CSE-335">CSE-335 - Software Engineering</option>
+            <option value="CSE-331">CSE-331 - Database Systems</option>
+            <option value="CSE-313">CSE-313 - Algorithms</option>
+        </select>
+    </div>
+
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Attendance %</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="records-list">
+            <!-- Records will be populated here -->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

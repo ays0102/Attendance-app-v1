@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <!-- Styles if not inherited from parent -->
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+<div id="settings-screen" class="hidden">
+    <h2>Account Settings</h2>
+    
+    <div class="profile-card">
+        <div class="profile-header">
+            <div class="profile-avatar" id="settings-avatar">JD</div>
+            <div class="profile-info">
+                <h3 id="settings-name">John Doe</h3>
+                <p id="settings-email">john@univ.edu</p>
+                <button class="btn-secondary" id="change-avatar-btn"><i class="fas fa-camera"></i> Change Photo</button>
+            </div>
+        </div>
+        
+        <div class="profile-details">
+            <div class="detail-item">
+                <h4>Account Type</h4>
+                <p id="settings-role">Student</p>
+            </div>
+            <div class="detail-item">
+                <h4>Member Since</h4>
+                <p id="settings-join-date">January 15, 2023</p>
+            </div>
+            <div class="detail-item">
+                <h4>Last Login</h4>
+                <p id="settings-last-login">Today, 10:30 AM</p>
+            </div>
+            <div class="detail-item">
+                <h4>Theme</h4>
+                <select id="theme-selector">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="system">System Default</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    
+    <h3>Security</h3>
+    <div class="card">
+        <div class="flex justify-between items-center">
+            <div>
+                <h4>Password</h4>
+                <p>Last changed 3 months ago</p>
+            </div>
+            <button class="btn-secondary" id="change-password-settings-btn">Change Password</button>
+        </div>
+    </div>
+    
+    <h3 class="mt-20">Danger Zone</h3>
+    <div class="card">
+        <div class="flex justify-between items-center">
+            <div>
+                <h4>Delete Account</h4>
+                <p>Permanently remove your account and all data</p>
+            </div>
+            <button class="btn-danger" id="delete-account-btn">Delete Account</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

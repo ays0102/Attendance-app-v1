@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <!-- Styles if not inherited from parent -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+<div id="dashboard-screen">
+    <div class="welcome-section">
+        <h2>Welcome back, <span id="greeting-name">Shuci</span>.</h2>
+        <p>Here's what's happening today</p>
+    </div>
+
+    <!-- Stats Overview -->
+    <div class="stats-grid">
+        <div class="stat-card student">
+            <h3><i class="fas fa-calendar-check"></i> Today's Attendance</h3>
+            <div class="stat-value" id="today-attendance">85%</div>
+            <div class="stat-change positive">
+                <i class="fas fa-arrow-up"></i> 5% from yesterday
+            </div>
+        </div>
+        <div class="stat-card">
+            <h3><i class="fas fa-chalkboard-teacher"></i> Classes Today</h3>
+            <div class="stat-value" id="classes-today">3</div>
+            <div class="stat-change">
+                <i class="fas fa-info-circle"></i> Next: CSE-326 at 9:30 AM
+            </div>
+        </div>
+        <div class="stat-card faculty">
+            <h3><i class="fas fa-tasks"></i> Pending Tasks</h3>
+            <div class="stat-value" id="pending-tasks">2</div>
+            <div class="stat-change negative">
+                <i class="fas fa-exclamation-circle"></i> 1 overdue
+            </div>
+        </div>
+        <div class="stat-card admin">
+            <h3><i class="fas fa-bell"></i> Notifications</h3>
+            <div class="stat-value" id="unread-notifications">3</div>
+            <div class="stat-change">
+                <i class="fas fa-envelope"></i> 2 new messages
+            </div>
+        </div>
+    </div>
+
+    <h3>Today's Classes</h3>
+    <div class="cards-grid" id="todays-classes">
+        <!-- Classes will be populated dynamically -->
+    </div>
+
+    <h3>Quick Actions</h3>
+    <div class="cards-grid">
+        <div class="card" data-action="attendance-report">
+            <h3><i class="fas fa-chart-pie"></i> Attendance Report</h3>
+            <p>View detailed attendance statistics and analytics</p>
+            <div class="card-footer">
+                <span class="card-meta"><i class="fas fa-clock"></i> Updated today</span>
+                <button class="view-btn">View</button>
+            </div>
+        </div>
+        <div class="card" data-action="faculty-details">
+            <h3><i class="fas fa-user-tie"></i> Faculty Details</h3>
+            <p>View information about faculty members</p>
+            <div class="card-footer">
+                <span class="card-meta"><i class="fas fa-users"></i> 15 faculty</span>
+                <button class="view-btn">View</button>
+            </div>
+        </div>
+        <div class="card" data-action="class-test-details">
+            <h3><i class="fas fa-edit"></i> Class Test Details</h3>
+            <p>View and manage class test records</p>
+            <div class="card-footer">
+                <span class="card-meta"><i class="fas fa-book"></i> 4 tests</span>
+                <button class="view-btn">View</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
